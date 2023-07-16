@@ -3,7 +3,7 @@
     <input
       type="text"
       v-model="searchTerm"
-      placeholder="Enter a breed"
+      placeholder="Enter a breed..."
       class="search-input"
     />
     <button class="search-button" @click="search">Search</button>
@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     search() {
-      console.log("Searching for:", this.searchTerm);
     },
   },
 };
@@ -32,7 +31,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 85%;
+  width: 88%;
   margin-left: 5rem;
 }
 
@@ -53,7 +52,9 @@ export default {
   border-radius: 5px;
   margin-left: 10px;
   cursor: pointer;
+  transition: ease-in all 0.5s;
 }
+
 .search-button:hover {
   background: #fdc001;
   color: #fff;
@@ -69,17 +70,17 @@ export default {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .search-form {
-    margin: 10px; 
+    margin: 10px;
   }
 
   .search-input,
   .search-button {
-    font-size: 18px; 
-    padding: 12px 24px; 
+    font-size: 18px;
+    padding: 12px 24px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
   .search-input,
   .search-button {
     padding: 8px 16px;
