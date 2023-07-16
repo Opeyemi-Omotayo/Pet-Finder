@@ -7,7 +7,9 @@
         <p class="card-breed">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <button class="see_more">See More</button>
+        <router-link :to="{ name: 'DogDetailsview', params: { breed: dog.breed } }">
+          <button class="see_more">See More</button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -57,6 +59,9 @@ export default {
 
 .card-content {
   padding: 10px;
+}
+.card-content a{
+  text-decoration: none;
 }
 
 .card-title {
