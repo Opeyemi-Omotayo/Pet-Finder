@@ -1,11 +1,13 @@
 <template>
   <Banner />
+  <Search />
 </template>
 
 <script>
 import Banner from './Banner.vue';
+import Search from './Search.vue';
 export default {
-  components: { Banner },
+  components: { Banner, Search },
   name: "HelloWorld"
 };
 </script>
