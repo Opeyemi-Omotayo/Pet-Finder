@@ -20,6 +20,17 @@ export default {
   },
   methods: {
     search() {
+      const breedName = this.searchTerm.toLowerCase();
+      fetch(`https://dog.ceo/api/breed/${breedName}/images`)
+        .then((response) => response.json())
+        .then((data) => {
+          this.$emit("search-results", data.message);
+          console.log(this.searchTerm, data.message)
+
+        })
+        .catch((error) => {
+          console.error("Error fetching dogs:", error);
+        });
     },
   },
 };
@@ -27,7 +38,7 @@ export default {
 
 <style>
 .search-form {
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
