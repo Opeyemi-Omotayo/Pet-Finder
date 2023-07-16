@@ -11,7 +11,7 @@
                      <div class="navbar-area">
                         <nav class="site-navbar">
                            <ul>
-                              <li><router-link to="/">Pet Finder</router-link></li>
+                              <li><router-link to="/">Home</router-link></li>
                               <li><router-link to="/">About</router-link></li>
                               <li><router-link to="/">Why Us</router-link></li>
                               <li><router-link to="/">Contact Us</router-link></li>

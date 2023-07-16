@@ -7,7 +7,6 @@
 
 <script>
 import DogCard from './DogCard.vue'
-import { mapActions } from 'vuex';
 
 export default {
   name: "Dog",
