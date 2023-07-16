@@ -1,7 +1,7 @@
 <template>
   <div class="card-list">
     <div v-for="dog in dogs" :key="dog.id" class="card">
-      <img :src="dog.image" :alt="dog.breed" class="card-image" />
+      <img v-lazy="dog.image" :alt="dog.breed" class="card-image" />
       <div class="card-content">
         <h3 class="card-title">{{ dog.breed }}</h3>
         <p class="card-breed">

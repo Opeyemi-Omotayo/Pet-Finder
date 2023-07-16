@@ -7,7 +7,7 @@
           <div class="col-sub">
             <div class="about_img">
               <figure>
-                <img :src="image" :alt="breed" :class="['dog-image',{ grayscale: isGrayscale, sepia: isSepia },]"
+                <img v-lazy="image" :alt="breed" :class="['dog-image',{ grayscale: isGrayscale, sepia: isSepia },]"
                 />
               </figure>
             </div>
