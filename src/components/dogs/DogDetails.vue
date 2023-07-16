@@ -1,19 +1,13 @@
 <template>
-  <div v-if="loading">Loading...</div>
-  <div v-else>
+    <loading :loading="loading" />
+  <div>
     <div class="about">
       <div class="container_width">
         <div class="row d_flex grig">
           <div class="col-sub">
             <div class="about_img">
               <figure>
-                <img
-                  :src="image"
-                  :alt="breed"
-                  :class="[
-                    'dog-image',
-                    { grayscale: isGrayscale, sepia: isSepia },
-                  ]"
+                <img :src="image" :alt="breed" :class="['dog-image',{ grayscale: isGrayscale, sepia: isSepia },]"
                 />
               </figure>
             </div>
@@ -43,8 +37,13 @@
 </template>
 
 <script>
+import Loading from '../Loading.vue'
+
 export default {
   name: "DogDetails",
+  components: {
+    Loading
+  },
   data() {
     return {
       image: "",
@@ -56,6 +55,9 @@ export default {
   created() {
     this.breed = this.$route.params.breed;
     this.fetchImages();
+    setTimeout(() => {
+      this.loading = false; 
+    }, 2000);
   },
 
   methods: {
