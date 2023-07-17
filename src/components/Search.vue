@@ -22,15 +22,21 @@ export default {
     search() {
       const breedName = this.searchTerm.toLowerCase();
       fetch(`https://dog.ceo/api/breed/${breedName}/images`)
-        .then((response) => response.json())
+        .then((response) => {
+         if (!response.ok) {
+             throw new Error("Breed not found");
+          }
+             return response.json();
+         })
         .then((data) => {
-          this.$emit("search-results", data.message);
+             this.$emit("search-results", { searchTerm: this.searchTerm, data: data.message });
           console.log(this.searchTerm, data.message)
-
         })
         .catch((error) => {
           console.error("Error fetching dogs:", error);
+          this.$emit("search-results", { error: true });
         });
+        
     },
   },
 };
