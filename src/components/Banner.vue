@@ -33,7 +33,7 @@ export default {
 <style>
 .container {
     min-width: 992px ;
-    margin-left: 5rem;
+    margin-left: 6rem;
   }
   .carousel-caption {
   position: absolute;
