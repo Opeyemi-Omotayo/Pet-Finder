@@ -1,24 +1,23 @@
-# pet-finder
+# pet-finder - A sample project for Eden.
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## About
 
-### Compiles and minifies for production
-```
-npm run build
-```
+This website is designed to help connect loving families with adorable dogs in need of a forever home.It was developed with Vue and CSS.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Technologies used
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vue
+- CSS
+
+
+## Roadmap
+
+- Home
+- Search for dogs available for adoption based on breed.
+- View detailed information about each dog, including images and descriptions.
+- Click on "See More" to explore individual dog profiles.
+
+
+## Production
+Product display : [Production Website Link](https://musical-pithivier-82d170.netlify.app/)
