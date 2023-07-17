@@ -120,7 +120,7 @@ export default {
     filter: drop-shadow(4px 6px 5px #0d03034f);
     border-top-right-radius:  100px;
     border-bottom-left-radius:  100px;
-    margin-left: 6.5rem;
+    margin-left: 8rem;
 }
 
 .read_more {
