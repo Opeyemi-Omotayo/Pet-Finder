@@ -120,8 +120,9 @@ export default {
     filter: drop-shadow(4px 6px 5px #0d03034f);
     border-top-right-radius:  100px;
     border-bottom-left-radius:  100px;
-    margin-left: 5rem;
+    margin-left: 6.5rem;
 }
+
 .read_more {
     font-size: 16px;
     background: #363636;
@@ -216,7 +217,7 @@ export default {
     margin-left: 1rem;
 }
    }
-   
+
    @media (max-width: 575px) {
     
     .about_img,
