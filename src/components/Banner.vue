@@ -120,7 +120,7 @@ export default {
     filter: drop-shadow(4px 6px 5px #0d03034f);
     border-top-right-radius:  100px;
     border-bottom-left-radius:  100px;
-    margin-left: 3rem;
+    margin-left: 5rem;
 }
 .read_more {
     font-size: 16px;
@@ -161,8 +161,13 @@ export default {
     .mar_right {
         margin-right: 0;
     }
+    .avail-h1{
+  text-align: center;
+  margin: 3rem;
+}
     .container {
     max-width: 720px;
+    margin-left: 3rem;
   }
     .creative h1 {
         font-size: 56px;
@@ -190,8 +195,28 @@ export default {
     }
     .container {
     max-width: 540px;
+    margin-left: 2rem;
   }
+  .avail-h1{
+  text-align: center;
+  margin: 2rem;
+}
+ .row {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2 {
+    max-width: 100%;
+  }
+  .agency figure img {
+    filter: drop-shadow(4px 6px 5px #0d03034f);
+    border-top-right-radius:  100px;
+    border-bottom-left-radius:  100px;
+    margin-left: 1rem;
+}
    }
+   
    @media (max-width: 575px) {
     
     .about_img,
@@ -205,6 +230,27 @@ export default {
     .mar_right {
         margin-right: 0px;
     }
+    .avail-h1{
+  text-align: center;
+  margin: 1rem;
+}
+     .container {
+    margin-left: 1rem;
+  }
+   .row {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2 {
+    max-width: 100%;
+  }
+  .agency figure img {
+    filter: drop-shadow(4px 6px 5px #0d03034f);
+    border-top-right-radius:  100px;
+    border-bottom-left-radius:  100px;
+    margin-left: 1rem;
+}
 }
 
 @media (min-width: 1200px) {

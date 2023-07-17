@@ -1,19 +1,6 @@
 <template>
       <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-         <router-link to="/">Home</router-link>
-        </li>
-        <li class="footer__item">
-         <router-link to="/">About</router-link>
-        </li>
-        <li class="footer__item">
-          <router-link to="/">Why Us</router-link>
-        </li>
-        <li class="footer__item">
-         <router-link to="/">Contact Us</router-link>
-        </li>
-      </ul>
+      <FooterNavLinks />
       <p class="footer__copyright">
         &copy; Copyright by
         <a
@@ -27,8 +14,13 @@
 </template>
 
 <script>
+import FooterNavLinks from './footer/FooterNavLinks.vue'
+
 export default {
-    name: "Footer"
+    name: "Footer",
+    components: {
+      FooterNavLinks
+    }
 
 }
 </script>
@@ -73,4 +65,37 @@ export default {
 .footer__copyright .footer__link {
   font-size: 0.8rem;
 }
+
+@media (max-width: 576px) {
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .footer__nav {
+    justify-content: space-between;
+  }
+
+  .footer__item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__nav {
+    justify-content: center;
+  }
+
+  .footer__item {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+  }
 </style>

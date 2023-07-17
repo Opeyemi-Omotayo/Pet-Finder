@@ -1,10 +1,9 @@
 <template>
    <Search @search-results="updateDogs"/>
-   <div class="container-dog">
+   <div class="container">
     <div v-if="searched && error">
       <p>No results found for "{{ searchTerm }}".</p>
     </div>
-    
     <div v-else-if="filteredDogs.length > 0" class="card-lists">
       <div v-for="dog in filteredDogs" :key="dog.id" class="card">
         <img v-lazy="dog" :alt="dog.breed" class="card-image" />
@@ -88,45 +87,5 @@ export default {
   gap: 20px;
   margin-top: 3rem;
 }
-.container-dog {
-  min-width: 992px ;
-    margin-left: 5rem;
-    margin-bottom: 25rem;
-}
 
-.dog-list {
-  display: flex;
-  flex-wrap: wrap;
-  height: 380px;
-
-}
-
-.dog-card {
-  flex: 0 0 300px;
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-.dog-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.dog-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.dog-description {
-  color: #777;
-  text-align: center;
-}
 </style>
