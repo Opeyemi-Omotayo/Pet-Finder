@@ -4,6 +4,8 @@ import DogDetailsView from '../views/DogDetailsView.vue'
 import AboutView from '../views/AboutView.vue'
 import WhyUsView from '../views/WhyUsView.vue'
 import ContactView from '../views/ContactView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
+
 
 
 
@@ -28,11 +30,17 @@ const routes = [
     name: 'contact',
     component: ContactView
   },
-  { path: '/breed/:breed',
+  { 
+    path: '/breed/:breed',
    name: 'DogDetailsview', 
    component:  DogDetailsView,
    props: true
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundView
+  }
 
 ]
 
