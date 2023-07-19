@@ -15,7 +15,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
   margin: 3rem;
-  height: 400px;
+  height: 550px;
 }
  
  </style>

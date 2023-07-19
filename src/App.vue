@@ -305,4 +305,27 @@ html {
     display: block;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-navbar ul li {
+    padding-right: 55px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .site-navbar ul li {
+    padding-right: 70px;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+  .site-navbar ul li {
+    padding-right: 110px;
+}  
+}
+
+@media (min-width: 1343px) {
+    .site-navbar ul li{
+      padding-right: 145px;
+    }
+}
 </style>

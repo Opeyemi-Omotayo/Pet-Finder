@@ -87,6 +87,12 @@ export default {
   gap: 20px;
   margin-top: 3rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .avail-h1{
+      text-align: center;
+      margin-left: 2rem;
+  }
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
   .avail-h1{

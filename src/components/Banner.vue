@@ -144,6 +144,26 @@ export default {
     background: #fdc001;
     color: #fff;
 }
+@media (min-width: 1343px) {
+  .agency figure img {
+    width: 560px;
+    margin-left: 10rem;
+   }
+   .container {
+    max-width: 1270px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+  .agency figure img {
+    width: 530px;
+    margin-left: 6rem;
+   }
+   .container {
+    max-width: 1140px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .mar_right {
         margin-right: 0;
@@ -155,6 +175,10 @@ export default {
     .container {
     max-width: 960px;
   }
+  .agency figure img {
+    width: 420px;
+    margin-left: 5rem;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -175,12 +199,17 @@ export default {
     }
     .creative p {
         padding: 5px 0 15px 0;
+        width: 400px;
     }
     .creative .read_more {
         max-width: 142px;
         margin-right: 0; 
-        }
-        }
+    }
+    .agency figure img {
+    width: 350px;
+    margin-left: 6rem;
+   }
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
     .mar_right {
@@ -194,7 +223,7 @@ export default {
         margin-top: 30px;
     }
     .container {
-    max-width: 767px;
+    max-width: 540px;
     margin-left: 2rem;
   }
  .row {
@@ -227,7 +256,7 @@ export default {
 
 @media (max-width: 575px) {
   .container {
-    max-width: 550px;
+    max-width: 500px;
   }
   .cont{
     margin-left: 1rem;
@@ -272,12 +301,6 @@ export default {
   .col-1,
   .col-2 {
     max-width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
   }
 }
 

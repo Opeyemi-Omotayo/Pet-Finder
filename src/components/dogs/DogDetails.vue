@@ -202,6 +202,32 @@ export default {
   background: #fdc001;
   color: #fff;
 }
+@media (min-width: 1343px) {
+  .about_img figure img {
+  padding: 30px 0;
+  width: 410px;
+  height: 350px;
+  margin-top: -2rem;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+  .about_img figure img {
+  padding: 30px 0;
+  width: 370px;
+  height: 350px;
+  margin-top: -2rem;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about_img figure::before {
+  width: 75%;
+  height: 100%;
+  left: -30px;
+}
+
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
   .order {

@@ -76,18 +76,34 @@ export default {
   background: #fdc001;
   color: #fff;
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 1343px) {
+  .search-form{
+    margin-left: 6rem;
+    width: 84%;
+  }
   .search-input,
   .search-button {
     font-size: 18px;
-    padding: 12px 24px;
+    padding: 18px 24px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+  .search-input,
+  .search-button {
+    font-size: 18px;
+    padding: 15px 24px;
+  }
+  .search-form{
+    margin-left: 6rem;
+    width: 84%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .search-form {
-    margin: 10px;
+  .search-form{
+    margin-left: 6rem;
+    width: 82%;
   }
 
   .search-input,
@@ -101,6 +117,9 @@ export default {
   .search-input,
   .search-button {
     padding: 8px 16px;
+  }
+  .search-form{
+    margin-left: 3rem;
   }
 }
 

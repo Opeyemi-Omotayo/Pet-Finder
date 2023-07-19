@@ -103,7 +103,7 @@ export default {
   }
   .card {
   height: 380px;
-  width: 340px;
+  width: 320px;
 }
 }
 
@@ -115,6 +115,39 @@ export default {
   .card {
   height: 380px;
   width: 320px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr); 
+    width: 150px;
+  }
+  .card {
+  height: 380px;
+  width: 280px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr); 
+    width: 20px;
+  }
+  .card {
+  height: 380px;
+  width: 315px;
+}
+}
+
+@media (min-width: 1343px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr); 
+    width: 20px;
+  }
+  .card {
+  height: 380px;
+  width: 315px;
 }
 }
 
