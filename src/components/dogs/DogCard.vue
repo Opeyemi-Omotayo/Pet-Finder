@@ -1,5 +1,5 @@
 <template>
-  <div class="card-list">
+  <div class="card-list cont">
     <div v-for="dog in dogs" :key="dog.id" class="card">
       <img v-lazy="dog.image" :alt="dog.breed" class="card-image" />
       <div class="card-content">
@@ -96,9 +96,21 @@ export default {
     color: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .card-list {
     grid-template-columns: 1fr;
   }
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr); 
+    width: 150px;
+  }
+  .card {
+  height: 380px;
+  width: 320px;
+}
+}
+
 </style>

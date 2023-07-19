@@ -202,4 +202,63 @@ export default {
   background: #fdc001;
   color: #fff;
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .order {
+        order: -1;
+    }
+
+.about {
+  margin: 1rem;
+  height: 850px;
+}
+.about .titlepage {
+  margin-top: 27rem;
+  max-width: 700px;
+  float: left;
+}
+.about_img figure::before {
+  width: 95%;
+  height: 100%;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+}
+
+}
+
+@media (max-width: 576px){
+  .order {
+        order: -1;
+    }
+
+.about {
+  margin: 1rem;
+  height: 950px;
+}
+.about .titlepage {
+  margin-top: 18rem;
+  max-width: 700px;
+  float: left;
+}
+.titlepage p {
+line-height: 25px;
+}
+.about_img figure::before {
+  width: 110%;
+  height: 100%;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+}
+
+.about_img figure img {
+  width: 180px;
+  height: 200px;
+  margin-top: -2rem;
+}
+.about .read_more {
+  margin-top: 10px;
+}
+}
 </style>

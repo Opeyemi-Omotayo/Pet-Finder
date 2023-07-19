@@ -144,7 +144,6 @@ export default {
     background: #fdc001;
     color: #fff;
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
     .mar_right {
         margin-right: 0;
@@ -179,7 +178,7 @@ export default {
     }
     .creative .read_more {
         max-width: 142px;
-        margin-right: 0;
+        margin-right: 0; 
         }
         }
 
@@ -195,31 +194,44 @@ export default {
         margin-top: 30px;
     }
     .container {
-    max-width: 540px;
+    max-width: 767px;
     margin-left: 2rem;
   }
-  .avail-h1{
-  text-align: center;
-  margin: 2rem;
-}
  .row {
     flex-direction: column;
   }
-
   .col-1,
   .col-2 {
     max-width: 100%;
   }
-  .agency figure img {
-    filter: drop-shadow(4px 6px 5px #0d03034f);
-    border-top-right-radius:  100px;
-    border-bottom-left-radius:  100px;
-    margin-left: 1rem;
-}
+.creative h1{
+    font-size: 60px;
+    line-height: 70px;
+    color: #101010;
+    font-weight: bold;
+    }
+.creative p{
+      width: 680px;
+    }
+    .agency figure img {
+    width: 650px;
+    height: 420px;
+    margin-left: 0;
+   }
+   .agency figure{
+    margin: 0;
+    text-align: left;
    }
 
-   @media (max-width: 575px) {
-    
+  }
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 550px;
+  }
+  .cont{
+    margin-left: 1rem;
+  }
     .about_img,
     .agency {
         margin-top: 30px;
@@ -228,30 +240,39 @@ export default {
         margin-bottom: 5px;
         margin-right: 0;
     }
+    .creative h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: #101010;
+    font-weight: bold;
+    }
+    .creative p{
+      width: 340px;
+    }
     .mar_right {
         margin-right: 0px;
     }
-    .avail-h1{
-  text-align: center;
-  margin: 1rem;
-}
+    
      .container {
     margin-left: 1rem;
   }
    .row {
     flex-direction: column;
   }
+ 
+  .agency figure img {
+    width: 340px;
+    margin-left: 0;
+   }
+   .agency figure{
+    margin: 0;
+    text-align: left;
+   }
 
   .col-1,
   .col-2 {
     max-width: 100%;
   }
-  .agency figure img {
-    filter: drop-shadow(4px 6px 5px #0d03034f);
-    border-top-right-radius:  100px;
-    border-bottom-left-radius:  100px;
-    margin-left: 1rem;
-}
 }
 
 @media (min-width: 1200px) {
@@ -259,4 +280,5 @@ export default {
     max-width: 1140px;
   }
 }
+
 </style>

@@ -19,7 +19,7 @@
       </div>
     </div>
     <div v-else>
-      <p>You haven't searched for any breed.</p>
+      <p class="seach-P">You haven't searched for any breed.</p>
       <h3 class="avail-h1">Available Pets</h3>
     <loading :loading="isLoading" />
     <DogCard :dogs="dogs" />
@@ -86,6 +86,20 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 3rem;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .avail-h1{
+      text-align: left;
+      margin-left: 18rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .avail-h1{
+      text-align: left;
+      margin-left: 7rem;
+  }
 }
 
 </style>

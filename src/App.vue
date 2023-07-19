@@ -18,8 +18,6 @@
                            </ul>
                            <button class="nav-toggler" @click="toggleNav">
                             <span></span>
-                           <span></span>
-                           <span></span>
                           </button>
                         </nav>
                      </div>
@@ -134,6 +132,7 @@ html {
 .site-navbar ul li a.router-link-exact-active {
     color: #fdc001;
 }
+
 .nav-toggler {
     border: 3px solid #363636;
     padding: 5px;
@@ -168,6 +167,10 @@ html {
   .col-1 {
     flex-basis: 100%;
   }
+  .logo a{
+    font-size: 28px;
+    font-weight: 200;
+  }
 
   .col-2 {
     margin-top: 10px;
@@ -199,6 +202,8 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-right: 16rem;
+    margin-top: -5rem;
     width: 30px;
     height: 22px;
     background: transparent;
@@ -210,7 +215,78 @@ html {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #bd2525;
+    background-color: #fdc001;
+    transition: all 0.2s;
+  }
+
+  .nav-active .nav-toggler span:first-child {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+
+  .nav-active .nav-toggler span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-active .nav-toggler span:last-child {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
+  .nav-active ul {
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+.col-1 {
+    flex-basis: 100%;
+  }
+  .logo a{
+    font-size: 28px;
+    font-weight: 200;
+  }
+
+  .col-2 {
+    margin-top: 10px;
+  }
+
+  .site-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .site-navbar ul li {
+    margin-bottom: 10px;
+  }
+  .site-navbar ul li a{
+    display: none;
+  }
+
+  .site-navbar ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -18.5rem;
+    margin-top: -5rem;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .nav-toggler span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fdc001;
     transition: all 0.2s;
   }
 
