@@ -30,10 +30,8 @@ export default {
          })
         .then((data) => {
              this.$emit("search-results", { searchTerm: this.searchTerm, data: data.message });
-          console.log(this.searchTerm, data.message)
         })
         .catch((error) => {
-          console.error("Error fetching dogs:", error);
           this.$emit("search-results", { error: true });
         });
         
