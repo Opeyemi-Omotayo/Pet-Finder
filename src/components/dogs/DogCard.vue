@@ -99,7 +99,12 @@ export default {
 @media (max-width: 575px) {
   .card-list {
     grid-template-columns: 1fr;
+    width: 150px;
   }
+  .card {
+  height: 380px;
+  width: 340px;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

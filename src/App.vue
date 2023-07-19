@@ -273,7 +273,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-right: -18.5rem;
+    margin-right: -17rem;
     margin-top: -5rem;
     width: 30px;
     height: 22px;

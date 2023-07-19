@@ -119,7 +119,7 @@ export default {
 @media (max-width: 575px) {
   .search-form {
     flex-direction: column;
-    margin-left: -3.5rem;
+    margin-left: 2rem;
   }
 
   .search-button {
