@@ -139,15 +139,46 @@ export default {
   width: 315px;
 }
 }
-
-@media (min-width: 1343px) {
+@media (min-width: 1200px) and (max-width: 1342px) {
   .card-list {
     grid-template-columns: repeat(4, 1fr); 
     width: 20px;
   }
   .card {
   height: 380px;
-  width: 315px;
+  width: 288px;
+}
+}
+
+@media (min-width: 1343px) and (max-width: 1400px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr); 
+    width: 20px;
+  }
+  .card {
+  height: 380px;
+  width: 280px;
+}
+}
+
+@media (min-width: 1401px) and (max-width: 1600px){
+  .card-list {
+    grid-template-columns: repeat(4, 1fr); 
+    width: 20px;
+  }
+  .card {
+  height: 380px;
+  width: 280px;
+}
+}
+@media (min-width: 1601px){
+  .card-list {
+    grid-template-columns: repeat(5, 1fr); 
+    width: 20px;
+  }
+  .card {
+  height: 380px;
+  width: 270px;
 }
 }
 

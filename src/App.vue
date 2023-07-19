@@ -323,9 +323,15 @@ html {
 }  
 }
 
-@media (min-width: 1343px) {
+@media (min-width: 1343px) and (max-width: 1400px){
     .site-navbar ul li{
-      padding-right: 145px;
+      padding-right: 130px;
+    }
+}
+
+@media (min-width: 1401px){
+    .site-navbar ul li{
+      padding-right: 140px;
     }
 }
 </style>

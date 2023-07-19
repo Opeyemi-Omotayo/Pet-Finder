@@ -144,10 +144,10 @@ export default {
     background: #fdc001;
     color: #fff;
 }
-@media (min-width: 1343px) {
+@media (min-width: 1343px) and (max-width: 1400px) {
   .agency figure img {
     width: 560px;
-    margin-left: 10rem;
+    margin-left: 9rem;
    }
    .container {
     max-width: 1270px;
