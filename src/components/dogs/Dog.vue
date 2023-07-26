@@ -18,6 +18,7 @@
       </div>
       </div>
     </div>
+    
     <div v-else>
       <p class="seach-P">You haven't searched for any breed.</p>
       <h3 class="avail-h1">Available Pets</h3>
