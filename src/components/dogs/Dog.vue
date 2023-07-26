@@ -5,25 +5,16 @@
       <p>No results found for "{{ searchTerm }}".</p>
     </div>
     <div v-else-if="filteredDogs.length > 0" class="card-lists">
-      <div v-for="dog in filteredDogs" :key="dog.id" class="card">
-        <img v-lazy="dog" :alt="dog.breed" class="card-image" />
-      <div class="card-content">
-        <h3 class="dog-title">{{ searchTerm }}</h3>
-        <p class="dog-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <router-link :to="{ name: 'DogDetailsview', params: { breed: searchTerm } }">
-          <button class="see_more">See More</button>
-        </router-link>
-      </div>
-      </div>
+      <h3 class="avail-h1">Available Breeds</h3>
+      <DogCard :dogs="filteredDogs" :searchTerm="searchTerm" />
     </div>
-    
+
     <div v-else>
       <p class="seach-P">You haven't searched for any breed.</p>
       <h3 class="avail-h1">Available Pets</h3>
     <loading :loading="isLoading" />
-    <DogCard :dogs="dogs" />
+    <DogCard :dogs="dogs" :searchTerm="searchTerm" />
+
     </div>
   </div>
 </template>
@@ -83,10 +74,7 @@ export default {
   margin: 5rem;
 }
 .card-lists {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .avail-h1{

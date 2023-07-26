@@ -1,26 +1,29 @@
 <template>
   <div class="card-list cont">
-    <div v-for="dog in dogs" :key="dog.id" class="card">
-      <img v-lazy="dog.image" :alt="dog.breed" class="card-image" />
-      <div class="card-content">
-        <h3 class="card-title">{{ dog.breed }}</h3>
-        <p class="card-breed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <router-link :to="{ name: 'DogDetailsview', params: { breed: dog.breed } }">
-          <button class="see_more">See More</button>
-        </router-link>
-      </div>
-    </div>
+    <DogCardItem
+      v-for="dog in dogs"
+      :key="dog.id"
+      :dog="dog"
+      :searchTerm="searchTerm"
+    />
   </div>
 </template>
 
 <script>
+import DogCardItem from './DogCardItem.vue';
+
 export default {
   name: "DogCard",
+  components: {
+    DogCardItem,
+  },
   props: {
     dogs: {
       type: Array,
+      required: true,
+    },
+    searchTerm: {
+      type: String,
       required: true,
     },
   },
