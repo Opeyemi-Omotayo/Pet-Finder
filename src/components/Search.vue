@@ -1,5 +1,5 @@
 <template>
-  <div class="search-form">
+  <div class="search-form container">
     <input
       type="text"
       v-model="searchTerm"
@@ -46,8 +46,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 88%;
-  margin-left: 5rem;
 }
 
 .search-input {
@@ -76,8 +74,7 @@ export default {
 }
 @media (min-width: 1343px) {
   .search-form{
-    margin-left: 6rem;
-    width: 84%;
+    margin-left: 3rem;
   }
   .search-input,
   .search-button {
@@ -93,15 +90,13 @@ export default {
     padding: 15px 24px;
   }
   .search-form{
-    margin-left: 6rem;
-    width: 84%;
+    margin-left: 3rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .search-form{
-    margin-left: 6rem;
-    width: 82%;
+    margin-left: 3rem;
   }
 
   .search-input,

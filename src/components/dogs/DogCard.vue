@@ -99,89 +99,81 @@ export default {
     color: #fff;
 }
 
-@media (max-width: 575px) {
-  .card-list {
-    grid-template-columns: 1fr;
-    width: 150px;
+@media (max-width: 480px) {
+.card-list {
+    grid-template-columns: repeat(200px, 1fr);
   }
   .card {
-  height: 380px;
-  width: 320px;
-}
+    height: 380px;
+    width: 100%;
+  }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .card-list {
     grid-template-columns: repeat(2, 1fr); 
-    width: 150px;
   }
   .card {
   height: 380px;
-  width: 320px;
+  width: 100%;
 }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .card-list {
     grid-template-columns: repeat(3, 1fr); 
-    width: 150px;
   }
   .card {
   height: 380px;
-  width: 280px;
+  width: 100%;
 }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .card-list {
     grid-template-columns: repeat(3, 1fr); 
-    width: 20px;
   }
   .card {
   height: 380px;
-  width: 315px;
+  width: 100%;
 }
 }
 @media (min-width: 1200px) and (max-width: 1342px) {
   .card-list {
     grid-template-columns: repeat(4, 1fr); 
-    width: 20px;
   }
   .card {
   height: 380px;
-  width: 288px;
+  width: 100%;
 }
 }
 
 @media (min-width: 1343px) and (max-width: 1400px) {
   .card-list {
     grid-template-columns: repeat(4, 1fr); 
-    width: 20px;
   }
   .card {
   height: 380px;
-  width: 280px;
+  width: 100%;
 }
 }
 
 @media (min-width: 1401px) and (max-width: 1600px){
   .card-list {
     grid-template-columns: repeat(4, 1fr); 
-    width: 20px;
   }
   .card {
   height: 380px;
-  width: 280px;
+  width: 100%;
 }
 }
 @media (min-width: 1601px){
   .card-list {
     grid-template-columns: repeat(5, 1fr); 
-    width: 20px;
   }
   .card {
   height: 380px;
-  width: 270px;
+  width: 100%;
 }
 }
 

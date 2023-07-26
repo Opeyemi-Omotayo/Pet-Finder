@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container banner-container">
     <div class="carousel-caption relative">
       <div class="row d_flex">
         <div class="col-1">
@@ -31,10 +31,10 @@ export default {
 </script>
 
 <style>
-.container {
-    min-width: 992px ;
-    margin-left: 6rem;
-  }
+.banner-container{
+width: 100%;
+}
+
   .carousel-caption {
   position: absolute;
   right: 15%;
@@ -95,18 +95,12 @@ export default {
     margin-right: 5px;
 }
  .col-1 {
-    -ms-flex: 0 0 41.666667%;
-    flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
   .sub {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
     max-width: 50%;
   }
   .col-2 {
-    -ms-flex: 0 0 58.333333%;
-    flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
   .mar_right {
@@ -144,13 +138,34 @@ export default {
     background: #fdc001;
     color: #fff;
 }
+
+@media (min-width: 1601px) {
+  .agency figure img {
+    width: 560px;
+    margin-left: 17rem;
+   }
+   .container {
+    margin:1rem 3rem 0 3rem;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .agency figure img {
+    width: 560px;
+    margin-left: 11rem;
+   }
+   .container {
+    margin:1rem 3rem 0 3rem;
+  }
+}
+
 @media (min-width: 1343px) and (max-width: 1400px) {
   .agency figure img {
     width: 560px;
     margin-left: 9rem;
    }
    .container {
-    max-width: 1270px;
+    margin:1rem 3rem 0 3rem;
   }
 }
 
@@ -160,7 +175,7 @@ export default {
     margin-left: 6rem;
    }
    .container {
-    max-width: 1140px;
+    margin:1rem 3rem 0 3rem;
   }
 }
 
@@ -172,13 +187,13 @@ export default {
         max-width: 185px;
         margin-right: 0;
     }
-    .container {
-    max-width: 960px;
-  }
   .agency figure img {
     width: 420px;
-    margin-left: 5rem;
+    text-align: right;
    }
+   .container {
+    margin:1rem 3rem 0 3rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -190,8 +205,7 @@ export default {
   margin: 3rem;
 }
     .container {
-    max-width: 720px;
-    margin-left: 3rem;
+    margin:1rem 3rem 0 3rem;
   }
     .creative h1 {
         font-size: 56px;
@@ -211,7 +225,7 @@ export default {
    }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .mar_right {
         margin-right: 0px;
     }
@@ -223,8 +237,7 @@ export default {
         margin-top: 30px;
     }
     .container {
-    max-width: 540px;
-    margin-left: 2rem;
+    margin: 2rem;
   }
  .row {
     flex-direction: column;
@@ -240,7 +253,7 @@ export default {
     font-weight: bold;
     }
 .creative p{
-      width: 680px;
+      width: 100%;
     }
     .agency figure img {
     width: 650px;
@@ -254,13 +267,7 @@ export default {
 
   }
 
-@media (max-width: 575px) {
-  .container {
-    max-width: 500px;
-  }
-  .cont{
-    margin-left: 1rem;
-  }
+@media (max-width: 480px) {
     .about_img,
     .agency {
         margin-top: 30px;
@@ -276,14 +283,14 @@ export default {
     font-weight: bold;
     }
     .creative p{
-      width: 340px;
+      width: 90%;
     }
     .mar_right {
         margin-right: 0px;
     }
     
      .container {
-    margin-left: 1rem;
+    margin: 1.3rem;
   }
    .row {
     flex-direction: column;

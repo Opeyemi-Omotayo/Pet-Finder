@@ -104,7 +104,6 @@ export default {
   display: block;
   clear: both;
   width: 100%;
-  max-width: 1380px;
 }
 
 .about_img figure {
@@ -261,6 +260,10 @@ export default {
 .about {
   margin: 1rem;
   height: 950px;
+}
+.container_width {
+  padding: 0;
+  margin: 0;
 }
 .about .titlepage {
   margin-top: 18rem;
